@@ -378,4 +378,147 @@ footer {
   padding: 16px;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
+
+/* Responsividade geral para o layout principal */
+@media (max-width: 1100px) {
+  .container {
+    max-width: 98vw;
+    padding: 10px;
+  }
+}
+
+/* Responsividade para header e navegação */
+@media (max-width: 800px) {
+  .hero {
+    padding: 32px 0 16px 0;
+  }
+  .logo {
+    font-size: 1.7rem;
+  }
+  .hero h1 {
+    font-size: 1.2rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  .topnav {
+    gap: 12px;
+    min-height: 48px;
+    font-size: 0.98rem;
+    padding: 0 0 0 0;
+  }
+  .topnav a,
+  .sticky-nav a {
+    padding: 0 10px;
+    height: 48px;
+    font-size: 0.98rem;
+  }
+}
+
+/* Responsividade para grid de empresas */
+@media (max-width: 700px) {
+  .companies {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+  }
+  .company {
+    min-height: 120px;
+    padding: 14px 4px 12px 4px;
+  }
+  .company-img {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 4px;
+  }
+}
+
+/* Responsividade para descrição das empresas */
+@media (max-width: 900px) {
+  .company-desc {
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, 0);
+    min-width: 140px;
+    max-width: 95vw;
+    padding: 10px 8px;
+    font-size: 0.93rem;
+  }
+}
+
+/* Responsividade para cards e listas */
+@media (max-width: 600px) {
+  .card {
+    padding: 10px 4vw;
+    margin-bottom: 14px;
+    border-radius: 7px;
+  }
+  .card h2 {
+    font-size: 1.1rem;
+  }
+  .card ul,
+  .card ul ul {
+    font-size: 0.97rem;
+    padding-left: 14px;
+  }
+  .card ul li,
+  .card ul ul li {
+    padding: 6px 7px;
+    font-size: 0.97rem;
+    border-radius: 5px;
+  }
+}
+
+/* Responsividade para imagens */
+@media (max-width: 600px) {
+  .card img,
+  .container img {
+    max-width: 98vw;
+    margin: 10px auto;
+    border-radius: 7px;
+    padding: 3px;
+  }
+  img.logo,
+  img.icon {
+    max-width: 80px;
+    margin-bottom: 8px;
+  }
+}
+
+/* Responsividade para referências */
+@media (max-width: 600px) {
+  .referencias-list {
+    font-size: 0.92rem;
+    max-height: 180px;
+    padding-left: 8px;
+  }
+}
+
+/* Responsividade para footer */
+@media (max-width: 600px) {
+  footer {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
+
+/* Ajuste para navegação em telas muito pequenas */
+@media (max-width: 430px) {
+  .topnav {
+    flex-direction: column;
+    gap: 0;
+    min-height: unset;
+    padding: 0;
+  }
+  .topnav a,
+  .sticky-nav a {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 8px 0 8px 12px;
+    height: auto;
+    border-radius: 0;
+    font-size: 0.97rem;
+  }
+}
+
+
 /*
