@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistemas de Armazenamento de Energia</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Cabeçalho -->
+<header class="hero">
+  <div class="hero-content">
+    <div class="logo">BATERIAS</div>
+    <h1>Sistemas de Armazenamento de Energia</h1>
+    <p class="lead">Informações completas sobre tecnologias, empresas e aplicações</p>
+  </div>
+</header>
+<nav class="topnav fade-in sticky-nav">
+  <a href="#intro">Introdução</a>
+  <a href="#empresas">Empresas</a>
+  <a href="#tecnologias">Tecnologias</a>
+  <a href="#graficos">Gráficos</a>
+  <a href="#videos">Vídeos</a>
+  <a href="#referencias">Referências</a>
+</nav>
+
+<main class="container">
+    <!-- Introdução -->
+    <section class="card fade-in" id="intro">
+        <h2>1. Sistemas de Armazenamento de Energia</h2>
+        <h3>1.1 Introdução</h3>
+      <p>
+    Os sistemas de armazenamento de energia (SAE) são tecnologias cruciais para a modernização e sustentabilidade das redes elétricas. Embora o conceito de armazenamento de energia não seja novo, com exemplos como as usinas hidrelétricas reversíveis existentes há décadas, a crescente integração de fontes de energia renováveis intermitentes, como solar e eólica, tem impulsionado a necessidade de soluções de armazenamento mais flexíveis e eficientes. Esses sistemas permitem capturar energia em momentos de alta produção e liberá-la quando a demanda é maior ou a geração renovável é baixa, garantindo a estabilidade e a confiabilidade do fornecimento de energia.
+      </p>
+      <p>
+    Além de mitigar a intermitência das fontes renováveis, os SAEs oferecem uma gama de outras aplicações, incluindo a regulação de tensão e frequência, o fornecimento de serviços ancilares, o backup de energia para operações críticas, a substituição de geradores a diesel em áreas isoladas, e o suporte a microrredes e usinas virtuais. Eles também podem operar como dispositivos para o diferimento de investimentos em infraestrutura de transmissão e distribuição, e até mesmo serem móveis, aumentando a flexibilidade do sistema energético. A evolução tecnológica, especialmente em baterias e hidrogênio verde, está transformando o setor elétrico, promovendo uma transição energética mais inteligente e com menor pegada de carbono.
+      </p>
+        <h3>1.2 Conceitos e Definições</h3>
+      <p>
+    O armazenamento de energia refere-se à capacidade de capturar uma certa quantidade de energia em um dado momento para uso posterior. O dispositivo que realiza essa função é chamado de acumulador. A energia pode ser armazenada em diversas formas, como radiação, química, potencial e cinética. O processo de armazenamento geralmente envolve a conversão de uma forma de energia difícil de ser armazenada (como energia térmica) em uma mais facilmente acumulável (como energia elétrica), otimizando a utilização e a economia.
+      </p>
+      <p>
+    Existem diversas tecnologias de armazenamento de energia, cada uma com características técnicas e econômicas distintas, adequadas para diferentes escalas de tempo (curto ou longo prazo) e quantidades de energia. As principais categorias de armazenamento incluem:
+      </p>
+  <ul>
+    <li><b>1.2.1 Eletroquímicas:</b> Baterias (chumbo-ácido, íons de lítio, fluxo), células a combustível.</li>
+    <li><b>1.2.2 Eletromagnéticas:</b> Supercapacitores, supercondutores.</li>
+    <li><b>1.2.3 Termodinâmicas:</b> Armazenamento térmico (sais fundidos), ar comprimido (CAES).</li>
+    <li><b>1.2.4 Mecânicas:</b> Usinas reversíveis, volantes de inércia (flywheels).</li>
+  </ul>
+  <p>
+    Cada uma dessas tecnologias possui vantagens e desvantagens específicas em termos de densidade de energia, vida útil, eficiência de carga e descarga, custo de produção e manutenção, e impacto ambiental. A escolha da tecnologia mais adequada depende das premissas e restrições de cada projeto e aplicação específica.
+  </p>
+  <h3>1.3 Tipos de Sistemas de Armazenamento de Energia</h3>
+  <ul>
+    <li>
+      <b>1.3.1 Baterias:</b> Uma das formas mais comuns e versáteis de armazenamento de energia eletroquímica. Existem diversos tipos:
+      <ul>
+        <li><b>1.3.1.1 Baterias de Chumbo-Ácido:</b> Tecnologia madura e de baixo custo, amplamente utilizada para regulação de carga e reserva de giro. Possuem profundidade de descarga limitada e chumbo, um material perigoso, em sua composição.</li>
+        <li><b>1.3.1.2 Baterias de Íons de Lítio:</b> Alta densidade de energia, longa vida útil e ausência de efeito memória. Ideais para dispositivos IoT, smartphones, carros elétricos e drones.
+          <ul>
+            <li><b>1.3.1.2.1 Conceitos Básicos e Características:</b> Cada bateria possui tensão nominal, capacidade e limites de corrente definidos pelo fabricante. A tensão nominal para células Li-Po é de 3.7V e para Li-Ion é de 3.6V.</li>
+            <li><b>1.3.1.2.2 Associação de Células e Recarga:</b> Células podem ser associadas em série ou paralelo. A recarga é feita em estágios de corrente constante (CC) e tensão constante (CV), exigindo precisão e balanceamento.</li>
+            <li><b>1.3.1.2.3 Temperatura de Operação:</b> Faixa de operação de -20°C a 60°C. Monitorar a temperatura é essencial para evitar desgaste, danos ou riscos de incêndio/explosão.</li>
+          </ul>
+        </li>
+        <li><b>1.3.1.3 Baterias de Fluxo:</b> Permitem o armazenamento de grandes quantidades de energia por longos períodos, promissoras para aplicações em larga escala.</li>
+      </ul>
+    </li>
+    <li><b>1.3.2 Células a Combustível:</b> Convertem energia química de um combustível (como hidrogênio) e um oxidante em eletricidade. O hidrogênio verde é promissor, mas ainda caro e com infraestrutura limitada.</li>
+    <li><b>1.3.3 Supercapacitores:</b> Armazenam energia eletricamente em um campo eletrostático. Alta velocidade de descarga, sem manutenção, mas baixa capacidade de armazenamento e custo elevado.</li>
+    <li><b>1.3.4 Armazenamento Térmico:</b> Captura e retenção de energia na forma de calor ou frio para uso posterior. Exemplo: sais fundidos em plantas solares concentradas.</li>
+    <li><b>1.3.5 Armazenamento por Ar Comprimido (CAES):</b> Ar é comprimido em cavernas ou tanques e liberado para acionar turbinas. Alta eficiência, mas depende da geografia e pode causar impactos ambientais.</li>
+    <li><b>1.3.6 Usinas Hidrelétricas Reversíveis:</b> Água é bombeada para um reservatório superior em baixa demanda e liberada para gerar eletricidade em alta demanda. Alta eficiência e vida útil longa, mas custo inicial elevado e dependência geográfica.</li>
+    <li><b>1.3.7 Volantes de Inércia (Flywheels):</b> Armazenam energia na forma de energia cinética, girando um rotor em alta velocidade. Ideais para respostas rápidas, mas com limitações mecânicas e baixa duração de armazenamento.</li>
+  </ul>
+</section>
+
+
+    <!-- Empresas -->
+ 
+<section class="card fade-in" id="empresas">
+  <h2>Empresas que fornecem baterias</h2>
+  <div class="companies">
+    <div class="company">
+      <a href="https://www.moura.com.br/" target="_blank">
+        <img src="assets/Moura (1).png" alt="Moura" class="company-img"/>
+        <b>Moura</b>
+      </a>
+      <div class="company-desc">
+        Tradicional fabricante brasileira de baterias, com soluções BESS voltadas para negócios e aplicações comerciais.
+      </div>
+    </div>
+    <div class="company">
+      <a href="https://www.byd.com/br/" target="_blank">
+        <img src="assets/BYD.jpg" alt="BYD" class="company-img"/>
+        <b>BYD</b>
+      </a>
+      <div class="company-desc">
+        Empresa chinesa especializada em baterias de lítio (LFP), com foco em armazenamento de energia e veículos elétricos.
+      </div>
+    </div>
+    <div class="company">
+      <a href="https://www.weg.net/" target="_blank">
+        <img src="assets/weg.png" alt="WEG" class="company-img"/>
+        <b>WEG</b>
+      </a>
+      <div class="company-desc">
+        Multinacional brasileira que oferece soluções completas de armazenamento de energia, incluindo sistemas BESS para indústrias e comércio.
+      </div>
+    </div>
+    <div class="company">
+      <a href="https://www.deye.com/" target="_blank">
+        <img src="assets/deye.png" alt="Deye" class="company-img"/>
+        <b>Deye</b>
+      </a>
+      <div class="company-desc">
+        Fabricante de inversores e soluções integradas de armazenamento de energia, com ênfase em sistemas híbridos e residenciais.
+      </div>
+    </div>
+    <div class="company">
+      <a href="https://www.unipower.com.br/" target="_blank">
+        <img src="assets/unipower.png" alt="Unipower" class="company-img"/>
+        <b>Unipower</b>
+      </a>
+      <div class="company-desc">
+        Empresa brasileira que fornece sistemas de armazenamento versáteis para aplicações comerciais e industriais.
+      </div>
+    </div>
+    <div class="company">
+      <a href="https://www.freedom.com.br/" target="_blank">
+        <img src="assets/freedom.png" alt="Freedom" class="company-img"/>
+        <b>Freedom</b>
+      </a>
+      <div class="company-desc">
+        Especialista em soluções off-grid, oferecendo baterias duráveis para ambientes isolados e energia autossuficiente.
+      </div>
+    </div>
+
+    <div class="company">
+      <a href="https://solar.huawei.com/" target="_blank">
+        <img src="assets/huaweiSolar.jpeg" alt="Huawei" class="company-img"/>
+        <b>Huawei</b>
+      </a>
+
+      <div class="company-desc">
+        Multinacional chinesa com soluções de monitoramento inteligente e baterias integradas a sistemas de energia solar.
+      </div>
+    </div>
+
+    <div class="company">
+      <a href="https://www.cummins.com/" target="_blank">
+        <img src="assets/cummins.jpg" alt="Cummins" class="company-img"/>
+        <b>Cummins</b>
+      </a>
+      <div class="company-desc">
+        Empresa americana que fornece sistemas BESS industriais robustos, voltados para larga escala e confiabilidade.
+      </div>
+    </div>
+    <div class="company">
+      <a href="https://www.siemens-energy.com/" target="_blank">
+        <img src="assets/siemensEnergy.png" alt="Siemens Energy" class="company-img"/>
+        <b>Siemens Energy</b>
+      </a>
+      <div class="company-desc">
+        Fornece soluções de armazenamento de energia de grande porte, focando em eficiência e integração em redes elétricas.
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Tecnologias -->
+    <section class="card fade-in" id="tecnologias">
+      <h2>Tecnologias de Armazenamento</h2>
+      <ul>
+        <li><b>Baterias de Íons de Lítio:</b> Alta densidade energética, longa vida útil, ausência de efeito memória.</li>
+        <li><b>Baterias de Chumbo-Ácido:</b> Baixo custo, porém impacto ambiental e menor vida útil.</li>
+        <li><b>Baterias de Fluxo:</b> Ideais para grandes volumes de energia por longos períodos.</li>
+        <li><b>Células a Combustível:</b> Hidrogênio verde como alternativa limpa.</li>
+        <li><b>Supercapacitores:</b> Descarga rápida, baixa capacidade de armazenamento.</li>
+        <li><b>Armazenamento Térmico:</b> Uso de sais fundidos e materiais de mudança de fase.</li>
+        <li><b>Ar Comprimido (CAES):</b> Armazenamento em cavernas subterrâneas.</li>
+        <li><b>Hidrelétricas Reversíveis:</b> Maior forma de armazenamento em larga escala.</li>
+        <li><b>Volantes de Inércia (Flywheels):</b> Resposta rápida, baixa duração.</li>
+      </ul>
+    </section>
+
+    <!-- Gráficos -->
+    <section class="card fade-in" id="graficos">
+      <h2>Comparativo das Tecnologias</h2>
+      <canvas id="batteryChart"></canvas>
+      <p class="note">* Densidade (Wh/kg), Custo relativo ($/kWh, escala comparativa), Vida útil (anos)</p>
+    </section>
+
+    <!-- Vídeos -->
+    <section class="card fade-in" id="videos">
+      <h2>Vídeos</h2>
+      <div class="video-list">
+        <a href="https://drive.google.com/drive/folders/1xIxMHAxk8rJJaCGwZj6ehBLbBSieuUKX?usp=sharing" target="_blank">Entrevista com Marcos Antônio </a>
+        <a href="https://drive.google.com/drive/folders/1xIxMHAxk8rJJaCGwZj6ehBLbBSieuUKX?usp=sharing" target="_blank">Entrevista com Josan</a>
+        <a href="https://drive.google.com/file/d/1hIwUrGZz7tkNGWDrcD7bL56fWJvRKMH5/view?usp=sharing" target="_blank">Entrevista com Leonardo Vasconcellos</a>
+      </div>
+    </section>
+
+    <!-- Referências -->
+
+<section class="card fade-in" id="referencias">
+  <h2>Referências</h2>
+  <details>
+    <summary style="font-weight:700; color:#00579e; cursor:pointer;">Clique para ver todas as referências</summary>
+    <ul class="referencias-list">
+      <li>Daza, E. F. B. (2018). Determinação de arranjos regulatórios e econômicos para viabilizar investimentos em sistemas de armazenamento de energia em redes de distribuição de energia elétrica (Tese de Doutorado). Universidade Federal de Santa Maria. Acessado em 25 de agosto de 2025</li>
+      <li>Baterias de Lítio-Íon: Um guia completo. Embarcados.com.br. Disponível em: <a href="https://embarcados.com.br/baterias-de-litio-ion-um-guia-completo/#Os-Melhores-Treinamentos-sobre-Sistemas-embarcados-e-IoT" target="_blank">embarcados.com.br</a>. Acessado em 25 de agosto de 2025</li>
+      <li>Vian, Â., Tahan, C. M. V., Aguilar, G. J. R., & Gouvea, M. R. (2020). Armazenamento de energia: Fundamentos, tecnologia e aplicações. Blucher. Acessado em 25 de agosto de 2025</li>
+      <li>Banguero, E., Correcher, A., Pérez-Navarro, Á., & Morant, F. (2018). A review on battery charging and discharging control strategies: Application to renewable energy systems. Energies, 11(4), 1021. Acessado em 25 de agosto de 2025</li>
+      <li>Portelinha Júnior, F. M. (2018). Análise da Interoperabilidade de Sistemas de Comunicações Móveis na Operação e Controle Resiliente de Microrredes (Tese de Doutorado). Universidade Federal de Itajubá. Acessado em 25 de agosto de 2025</li>
+      <li>Oureilidis, K., Malamaki, K. N., Gallos, K., Tsitsimelis, A., & Voutyras, M. (2020). Ancillary services market design in distribution networks: Review and identification of barriers. Energies, 13(4), 917. Acessado em 25 de agosto de 2025</li>
+      <li>Cole, W. J., & Frazier, A. (2020). Cost Projections for Utility-Scale Battery Storage: 2020 Update. National Renewable Energy Laboratory. Acessado em 25 de agosto de 2025</li>
+      <li>Monteiro, D. F. C. S. (2017). Dimensionamento de um Sistema de Armazenamento de Energia para Edifícios Residenciais Utilizando Energia Solar Fotovoltaica (Dissertação de Mestrado). Universidade de Coimbra. Acessado em 25 de agosto de 2025</li>
+      <li>Mohamad, F., & Teh, J. (2018). Impacts of Energy Storage System on Power System Reliability: A Systematic Review. Energies, 11(7), 1749. Acessado em 25 de agosto de 2025</li>
+      <li>Cantane, D. A., Junior, O. H. A., & Hamerschmidt, M. B. (2020). Tecnologias de Armazenamento de Energia Aplicadas ao Setor Elétrico Brasileiro. Editora Scienza. Acessado em 25 de agosto de 2025</li>
+    </ul>
+  </details>
+</section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 - Sistemas de Armazenamento de Energia | Desenvolvido pelo 3º TI A - IFBA</p>
+  </footer>
+
+  <script src="src/script.js"></script>
+</body>
+</html>
